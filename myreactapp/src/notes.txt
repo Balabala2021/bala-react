@@ -1,0 +1,48 @@
+React
+-------------
+Folder structure
+-----------------------
+public
+   1. index.html
+            <div id='root'>React Entry point</div>
+    2.index.js
+            import React from 'react'
+            import ReactDom from 'react-dom/client'
+            import App from 'App.js'
+            const root=ReactDom.createRoot(document.getElementById('root'))
+            root.render(<App/>)
+    3.App.js
+        function App()
+        {
+            retutn(
+                <div>
+                        //call ur components
+                </div>
+            )
+        }
+
+        //create your components
+        //Hello
+        //Component defn
+        //Component first letter must be capital letter
+        //return (JSX coding)
+        function Hello()
+        {
+            //JSX starts
+            //JSX-To Wite HTML into Javascript
+            //class---className
+            //eventAttribute--second word frst letter caps
+            //onClick
+            //self closing tag
+            return(
+                <div>
+                    <h1>Hello User!!</h1>
+                </div>
+                //JSX ends
+            )
+        }
+
+
+        //data in React maintain into 2 ways
+        //1.props--passing data from parent to child through attribute of child Component
+        //2.state--component inside maintain data

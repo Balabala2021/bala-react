@@ -1,0 +1,67 @@
+import Home from "./welcome/Home";
+import About from "./welcome/About";
+import Product from "./welcome/Product";
+import Contact from "./welcome/Contact";
+import User from "./welcome/User";
+
+import { Route,Routes,useNavigate } from 'react-router-dom'
+import OldBooks from "./welcome/OldBooks";
+import NewBooks from "./welcome/NewBooks";
+import Login from "./welcome/Login";
+import Dashboard from "./welcome/Doseboard";
+
+function App(){
+  const navigate=useNavigate()
+return (
+  < div className="App">
+    <div className="nav">
+      <button onClick={()=>navigate("/")}>Home</button>
+      <button onClick={()=>navigate("/product")}>Product</button>
+      <button onClick={()=>navigate("/about")}>About</button>
+      <button onClick={()=>navigate("/contact")}>Contact</button>
+      <button onClick={()=>navigate("/user/1")}>User 1</button>
+      <button onClick={()=>navigate("/user/2")}>User 2</button>
+      <button onClick={()=>navigate("/book-types/old_books")}>Old Books</button>
+      <button onClick={()=>navigate("/book-types/new_books")}>New Boooks </button>
+      <button onClick={()=>navigate("/login")}>Login </button>
+      <button onClick={()=>navigate("/dashboard")}>Dashboard </button>
+
+
+
+
+
+
+
+    </div>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/product" element={<Product/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/user/:id" element={<User/>}/>
+
+      <Route path="/books">
+      <Route path="old_books" element={<OldBooks/>}/>
+      <Route path="new_books" element={<NewBooks/>}/>
+</Route>
+
+<Route path="/login" element={<Login/>}/>
+<Route path="/dashboard" element={<Dashboard/>}/>
+
+
+
+
+
+    </Routes>
+  </div>
+);
+
+
+
+
+}
+
+
+
+
+export default App;

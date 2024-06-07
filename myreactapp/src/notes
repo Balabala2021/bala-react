@@ -1,0 +1,31 @@
+// conditional rendering
+// values element ah screen la hidden panna kammika use panrom
+
+//ternary opearator use-- condition?true:false
+
+// List ---
+
+// List keys--
+
+//inline Css styling
+
+css style sheet
+
+creating state
+
+creating state in class components
+
+Multiple State in Hooks
+
+State With Object
+
+Updating Object in state
+
+Updating Object in Class Components
+
+Updating array in state
+
+understanding use Effect
+
+Using useEffect in Different Ways
+
